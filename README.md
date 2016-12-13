@@ -1,2 +1,6 @@
 # Precise-Pointer-Analysis
-Implementation of a precise K-Object context sensitive pointer analysis for Java
+
+This is a code sample of implementation of a precise pointer analysis as part of project Petablox. 
+
+For complete code changes, please visit https://github.com/petablox-project/petablox/commits/develop.
+
