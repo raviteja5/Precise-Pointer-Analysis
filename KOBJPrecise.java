@@ -28,15 +28,15 @@ import soot.Unit;
  * Implementation of a more precise k-obj analysis.
  * 
  * This analysis requires the following relations:
- * 		OAG : Object Allocation Graph which is a directed graph with allocation sites as nodes
- * 		diverge : The set of nodes in the OAG which have 2 or more outgoing edges
- * 		converge : The set of nodes in the OAG which have 2 or more incoming edges
+ * 	OAG : Object Allocation Graph which is a directed graph with allocation sites as nodes
+ * 	diverge : The set of nodes in the OAG which have 2 or more outgoing edges
+ * 	converge : The set of nodes in the OAG which have 2 or more incoming edges
  * 
  * Recognized system properties:
- * 		petablox.kobj.k : the 'k' value to use for each object allocation site.  Default is 1.
+ * 	petablox.kobj.k : the 'k' value to use for each object allocation site.  Default is 1.
  * 
  * This analysis outputs the following domains and relations:
- * 		C: domain containing all abstract contexts
+ * 	C: domain containing all abstract contexts
  *   	CC: each (c,c2) such that c2 is all but the last element of context c
  *   	CH: each (c,h) such that object allocation site h is the last element of abstract context c
  *   	CI: each (c,i) such that call site i is the last element of abstract context c
